@@ -1,0 +1,290 @@
+* {
+  margin: 0px;
+}
+@media screen and (max-width: 600px) {
+  .mainDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .bg-grey {
+    background: #f7f7f7;
+  }
+  /* Nav bar */
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    margin: 5px 15px;
+    padding: 5px 0;
+  }
+  .avatar {
+    display: none;
+  }
+  /* Banner */
+  .bannerImgCls {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bannerInfo {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    color: white;
+    font-size: 10px;
+  }
+  .bannerInfo h1 {
+    font-size: 20px;
+  }
+  /* CV */
+  #about .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  #target,
+  #personal-info {
+    margin: 5px;
+    padding-top: 20px;
+  }
+  .section-title {
+    margin: 30px 0;
+    font-size: 18px;
+  }
+  #target > p {
+    line-height: 35px;
+    text-wrap: auto;
+  }
+  #personal-info > ul > li > span {
+    font-weight: bold;
+  }
+  #personal-info > ul > li {
+    margin-bottom: 5px;
+  }
+  #job-info,
+  #certificate,
+  #project {
+    margin: 0 30px;
+  }
+  /* job-info */
+  .container-jobInfo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  .container-jobInfo > div {
+    height: auto;
+    border: 0.1px solid rgb(204, 204, 204);
+  }
+  #genzai {
+    display: inline-block;
+    background-color: rgb(51, 158, 245);
+    border-radius: 15%;
+    margin-left: 20px;
+    padding: 0 5px;
+    border-color: white;
+  }
+  /* Học Vấn */
+  .jobInfoTl {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+  }
+  /* Tung-DT */
+  .btn-warning {
+    border-radius: 35px;
+    border: none;
+    padding: 5px;
+    background-color: yellow;
+    /* margin-bottom: 35px; */
+  }
+  #keiken,
+  #gakureki,
+  #katsudou,
+  #shuumi,
+  #gengo,
+  #shugi {
+    position: relative;
+  }
+  /* Kinh nghiệm */
+  #keiken .btnViewMore,
+  #gakureki .btnViewMore,
+  #katsudou .btnViewMore,
+  #shuumi .btnViewMore,
+  #gengo .btnViewMore,
+  #shugi .btnViewMore {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  #keiken .btnViewLess,
+  #gakureki .btnViewLess,
+  #katsudou .btnViewLess,
+  #shuumi .btnViewLess,
+  #gengo .btnViewLess,
+  #shugi .btnViewLess {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  }
+
+  /* Học tập */
+  /* #gakureki .btnViewMore {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  #gakureki .btnViewLess {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  } */
+  /* Hoạt động */
+  /* #katsudou .btnViewMore {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  #katsudou .btnViewLess {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  } */
+  /* Sở thích */
+  /* #shuumi .btnViewMore {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  #shuumi .btnViewLess {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  } */
+  /* Tung-DT */
+  .infoContent {
+    margin: 10px 0px;
+    line-height: 30px;
+  }
+  .shuumiIcon {
+    display: none;
+  }
+  #shuumiIconBT {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin: 10px 30px;
+  }
+  #shuumiIconBT > i {
+    border: 1px solid rgb(10, 172, 194);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+  }
+  #shuumiIconBT i > span {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    font-size: 14px;
+  }
+  .kinouInfo {
+    margin: 5px 15px;
+  }
+  .detail-Info {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+  }
+  .detail-Info div {
+    border: 1px solid rgb(12, 130, 209);
+    margin: 20px 5px;
+  }
+  /* Chứng chỉ- Giải thưởng */
+  #rLine::before {
+    border-right: none;
+  }
+  #rLine::after {
+    border-bottom: none;
+  }
+  .cerContainer {
+    display: none;
+  }
+  #cerContainerBT {
+    display: block;
+  }
+  .detailCer > div {
+    width: 90%;
+    border-bottom: 2px solid peru;
+  }
+  /* Dự án */
+  #project {
+    margin-bottom: 50px;
+  }
+  #project .container,
+  .proContainer {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  table,
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  #shousai {
+    background-color: rgb(51, 158, 245);
+    border-radius: 15px;
+    text-align: center;
+    border-color: white;
+    margin: 5px;
+    font-size: 12px;
+    width: 50%;
+  }
+  .proConTitle {
+    padding-left: 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  .proContent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid gray;
+    height: 40px;
+    align-items: center;
+    font-size: 12px;
+  }
+  /* Footer */
+  #footer .container > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+  #footer .container > ul > li {
+    margin: 10px;
+    list-style-type: none;
+  }
+  #footer .container > ul > li > i {
+    color: rgb(0, 238, 255);
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+}
+.mainDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+/* Nav bar */
+#nav-bar .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  padding: 30px 10px;
+  line-height: 25px;
+}
+.start {
+  padding-right: 400px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+  position: absolute;
+  margin: 10px;
+  top: -60px;
+}
+/* Banner */
+.bannerImgCls {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.bannerInfo {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: white;
+}
+/* CV */
+#about .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#target,
+#personal-info {
+  margin: 5px 100px;
+  padding-top: 50px;
+}
+.section-title {
+  margin: 30px 0;
+  font-size: 18px;
+}
+#target > p {
+  line-height: 35px;
+  text-wrap: auto;
+}
+#personal-info > ul > li > span {
+  font-weight: bold;
+}
+#personal-info > ul > li {
+  margin-bottom: 5px;
+}
+#job-info,
+#certificate,
+#project {
+  margin: 0 200px;
+}
+/* job-info */
+.container-jobInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+.container-jobInfo > div {
+  height: auto;
+  border: 0.1px solid rgb(204, 204, 204);
+}
+#genzai {
+  display: inline-block;
+  background-color: rgb(51, 158, 245);
+  border-radius: 15%;
+  margin-left: 20px;
+  padding: 0 5px;
+  border-color: white;
+}
+/* Học Vấn */
+.jobInfoTl {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+}
+.infoContent {
+  margin: 10px 0px;
+  line-height: 30px;
+}
+/* Sở thích*/
+.shuumiIcon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  text-align: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+.shuumiIcon > i {
+  border: 1px solid rgb(10, 172, 194);
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+}
+.shuumiIcon > span {
+  font-size: 12px;
+}
+.detail-Info {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+}
+.detail-Info div {
+  border: 1px solid rgb(12, 130, 209);
+  margin: 20px 5px;
+}
+/* Chứng chỉ- Giải thưởng */
+#certificate .container,
+.cerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.detailCer {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid peru;
+}
+.detailCer > div {
+  font-size: 12px;
+}
+#rLine::before {
+  height: 110px;
+  display: inline-block;
+  width: 250px;
+  border-right: 2px solid peru;
+  content: "";
+  position: relative;
+}
+.rLineDetail {
+  margin-top: -110px;
+  position: absolute;
+}
+/* Dự án */
+#project {
+  margin-bottom: 50px;
+}
+#project .container,
+.proContainer {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  column-gap: 20px;
+}
+table,
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+#shousai {
+  background-color: rgb(51, 158, 245);
+  border-radius: 35%;
+  text-align: center;
+  border-color: white;
+  margin: 5px;
+  font-size: 12px;
+  width: 50%;
+}
+.proConTitle {
+  padding-left: 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.proContent {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid gray;
+  height: 40px;
+  align-items: center;
+  font-size: 12px;
+}
+/* Footer */
+#footer .container > ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+#footer .container > ul > li {
+  margin: 10px;
+  list-style-type: none;
+}
+#footer .container > ul > li > i {
+  color: rgb(0, 238, 255);
+  font-size: 30px;
+}

@@ -1,0 +1,73 @@
+@media screen and (max-width: 600px) {
+  #main {
+    padding: 20px 50px;
+    margin: 30px;
+  }
+  /* Grid */
+  #containerMain {
+    display: grid;
+    margin: 50px;
+    background-color: white;
+  }
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  #containerMain > div {
+    border: 20px solid darkblue;
+    padding: 20px;
+  }
+  /* Common Title */
+  .titleInfo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+  }
+  .detailGoal {
+    border-bottom: 0.1px solid gray;
+    margin: 10px 0;
+  }
+  .detailGoal > div {
+    margin: 5px 20px;
+  }
+  .detailGoal .preIcon {
+    font-size: 30px;
+  }
+  /*Goal, Team, Primary ' preIcon  */
+  #goal > .detail > .detailGoal > .preIcon,
+  #team > .detail > .detailGoal > .preIcon,
+  #primary > .detail > .detailGoal > .preIcon {
+    text-align: center;
+  }
+  #team > .detail > .detailGoal,
+  #primary > .detail > .detailGoal {
+    border-bottom: none;
+  }
+  /* TimeLine- icon */
+  #timeline > .detail > .detailGoal > .preIcon > div {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(153, 118, 187);
+    color: white;
+    margin: 5px 55% 5px 0;
+    text-align: center;
+  }
+  #timeline > .detail > .detailGoal {
+    border-bottom: 0.1px dashed rgb(65, 108, 202);
+  }
+}

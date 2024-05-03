@@ -1,0 +1,328 @@
+* {
+  margin: 0px;
+}
+@media screen and (max-width: 992px) {
+  .mainDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .bg-grey {
+    background: #f7f7f7;
+  }
+  /* Nav bar */
+  #nav-bar .container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    padding: 30px 10px;
+    line-height: 25px;
+  }
+  .avatar {
+    display: none;
+  }
+  /* Banner */
+  .bannerImgCls {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bannerInfo {
+    position: absolute;
+    top: 8%;
+    left: 38%;
+    color: white;
+  }
+  /* CV */
+  #about .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #target,
+  #personal-info {
+    margin: 10px;
+    padding-top: 10px;
+  }
+  .section-title {
+    margin: 30px 0;
+    font-size: 18px;
+  }
+  #target > p {
+    line-height: 30px;
+    text-wrap: auto;
+  }
+  #personal-info > ul > li > span {
+    font-weight: bold;
+  }
+  #personal-info > ul > li {
+    margin-bottom: 5px;
+  }
+  #job-info,
+  #certificate,
+  #project {
+    margin: 0 50px;
+  }
+  /* job-info */
+  .container-jobInfo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    justify-content: center;
+    /* grid-auto-columns: min-content; */
+  }
+  .container-jobInfo > div {
+    height: auto;
+    border: 0.1px solid rgb(204, 204, 204);
+  }
+  #genzai {
+    display: inline-block;
+    background-color: rgb(51, 158, 245);
+    border-radius: 15%;
+    margin-left: 20px;
+    padding: 0 5px;
+    border-color: white;
+  }
+  /* Học Vấn */
+  .jobInfoTl {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+  }
+  /* Tung-DT */
+  .btn-warning {
+    border-radius: 35px;
+    border: none;
+    padding: 5px;
+    background-color: yellow;
+    /* margin-bottom: 35px; */
+  }
+  #keiken,
+  #gakureki,
+  #katsudou,
+  #shuumi,
+  #gengo,
+  #shugi {
+    position: relative;
+  }
+  /* Kinh nghiệm */
+  #keiken .btnViewMore,
+  #gakureki .btnViewMore,
+  #katsudou .btnViewMore,
+  #shuumi .btnViewMore,
+  #gengo .btnViewMore,
+  #shugi .btnViewMore {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  #keiken .btnViewLess,
+  #gakureki .btnViewLess,
+  #katsudou .btnViewLess,
+  #shuumi .btnViewLess,
+  #gengo .btnViewLess,
+  #shugi .btnViewLess {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  }
+
+  /* Học tập */
+  /* #gakureki .btnViewMore {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#gakureki .btnViewLess {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+} */
+  /* Hoạt động */
+  /* #katsudou .btnViewMore {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#katsudou .btnViewLess {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+} */
+  /* Sở thích */
+  /* #shuumi .btnViewMore {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#shuumi .btnViewLess {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+} */
+  /* Tung-DT */
+  .infoContent {
+    margin: 10px 0px;
+    line-height: 30px;
+  }
+  /* Sở thích*/
+  .shuumiIcon {
+    display: none;
+  }
+  #shuumiIconBT {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    /* column-gap: 10px; */
+    row-gap: 50px;
+    margin: 10px;
+  }
+  #shuumiIconBT > i {
+    border: 1px solid rgb(10, 172, 194);
+    border-radius: 50%;
+    padding: 20px;
+    padding-right: 45px;
+    font-size: 20px;
+    position: relative;
+  }
+  #shuumiIconBT i > span {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    font-size: 14px;
+  }
+  .kinouInfo {
+    margin: 5px 15px;
+  }
+  .detail-Info {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+  }
+  .detail-Info div {
+    border: 1px solid rgb(12, 130, 209);
+    margin: 20px 5px;
+  }
+  /* Chứng chỉ- Giải thưởng */
+  #cerContainerBT {
+    display: none;
+  }
+  #certificate .container,
+  .cerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .detailCer p {
+    padding: 2px 0;
+    margin: 2px 0;
+  }
+  .detailCer > div {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .detailCer {
+    margin: 0 0 50px 15px;
+    padding-bottom: 30px;
+    height: 220px;
+    display: inline-block;
+    width: 250px;
+    position: relative;
+  }
+  #rLine::before {
+    top: 0px;
+    right: -8%;
+    height: 180px;
+    border-right: 1px solid peru;
+    content: "";
+    position: absolute;
+    /* margin: 0 100%; */
+  }
+  #rLine::after {
+    top: 100%;
+    width: 210%;
+    border-bottom: 1px solid peru;
+    content: "";
+    position: absolute;
+  }
+  /* Dự án */
+  #project {
+    margin-bottom: 50px;
+  }
+  #project .container,
+  .proContainer {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  table,
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  #shousai {
+    background-color: rgb(51, 158, 245);
+    border-radius: 10px;
+    text-align: center;
+    border-color: white;
+    margin: 5px;
+    font-size: 10px;
+    width: 50%;
+  }
+  .proConTitle {
+    padding-left: 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 14px;
+  }
+  .proContent {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    border: 1px solid gray;
+    height: 40px;
+    align-items: center;
+    font-size: 12px;
+  }
+  .proContent div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .proContent div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .proContent div:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  /* Footer */
+  #footer .container > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+  #footer .container > ul > li {
+    margin: 10px;
+    list-style-type: none;
+  }
+  #footer .container > ul > li > i {
+    color: rgb(0, 238, 255);
+    font-size: 30px;
+  }
+}
